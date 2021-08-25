@@ -28,6 +28,8 @@ django-countries
 
 - Log out
 
+- Redirect Users and Non Users From restricted pages 
+
 - Profile activation via email
 
 - Reset password
