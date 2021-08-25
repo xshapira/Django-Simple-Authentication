@@ -34,3 +34,7 @@ django-countries
 - Ready to go Gmail smtp setup
 
 -------------------------------
+
+![django_register](https://user-images.githubusercontent.com/80206446/130806065-ccddfaf5-fd5e-4ac9-a66c-32329680a558.jpg)
+![django_password_reset](https://user-images.githubusercontent.com/80206446/130806262-4c4fca91-e77b-4533-b1aa-064f814452d1.jpg)
+![django_password_change](https://user-images.githubusercontent.com/80206446/130806473-9d06502d-7c01-43e9-a824-4f324f385745.jpg)
