@@ -11,7 +11,7 @@ django-countries
 
 ---------------------------------------------
 
-**Functionality
+-------  FUNCIONALITY ------------
 
 - login with  username or password
 
