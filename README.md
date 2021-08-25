@@ -1,6 +1,13 @@
 # Django-Simple-Authentication
 Django Simple Authentication includes password reset, mail verification, prevent banned users to login and also with some extra model fields.
 
+Setup Your Gmail First in settings.py
+
+admin user ad
+
+admin pass ad 
+
+
 The packages you should install for django 
 
 django-crispy-forms
