@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card text-center">
+  <div class="card-header">
+    User Information
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Username : {{ request.user.username }}</h5>
+    <p class="card-text">User Verified :  
+      {% if user.is_verified %}
+      Mail Verified 
+      {% else %}
+      Please Verify Your Mail 
+      {% endif %}
+    </p>
+    <p class="card-text">Country : {{ request.user.country }} </p>
+    {% if not user.is_verified %}
+      <a href="{% url 'resend' %}" class="btn btn-primary">Resend Activation Mail</a>
+    {% endif %}
+    <br>
+    <br>
+    <p>Banned Status : {{ request.user.is_banned }}</p>
+  </div>
+</div>
+
+<div class="card text-center">
+  <div class="card-header">
+    <h2>Some Test Posts</h2>
+  </div>
+  <br>
+  {% for post in posts %}
+  <div class="card-body">
+    <h5 class="card-title">{{ post.title }}</h5>
+    <hr>
+  </div>
+  {% endfor %}
+</div>
+  {% if messages %}
+  <ul class="messages">
+      {% for message in messages %}
+      <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+  </ul>
+  {% endif %}
+{% endblock content %}
