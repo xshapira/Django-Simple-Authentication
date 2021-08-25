@@ -11,24 +11,26 @@ django-countries
 
 ---------------------------------------------
 
-Functionality
+**Functionality
 
-via username & password
+- login with  username or password
 
-Create an account
+- Create an account
 
-Log out
+- Log out
 
-Profile activation via email
+- Profile activation via email
 
-Reset password
+- Reset password
 
-Resend an activation code
+- Resend an activation code
 
-Change password
+- Change password
 
-Prevent Banned People To Login
+- Prevent Banned People To Login
 
-Country Field in Register
+- Country Field in Register
+
+- Ready to go Gmail smtp setup
 
 -------------------------------
