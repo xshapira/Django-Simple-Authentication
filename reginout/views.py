@@ -36,9 +36,8 @@ class GuestView(View):
 # Members only pages 
 class MemberView(View):
   def dispatch(self, request, *args, **kwargs):
-    if not self.request.user.is_authenticated:
-      return redirect("login")
-    return super(MemberView,self).dispatch(request, *args, **kwargs)
+    return (super(MemberView, self).dispatch(request, *args, **kwargs)
+            if self.request.user.is_authenticated else redirect("login"))
 
 # Redirect users to banned Page
 class BannedView(View):
